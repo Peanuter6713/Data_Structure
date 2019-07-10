@@ -28,7 +28,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex2_18.cpp">
+    <ClCompile Include="ex2_21.cpp">
       <Filter>源文件\section02</Filter>
     </ClCompile>
   </ItemGroup>
