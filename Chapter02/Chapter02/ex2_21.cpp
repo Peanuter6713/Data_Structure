@@ -19,7 +19,7 @@ void CreateList(SeqList &L)
 	for (i = 0; i < 10; i++)
 		L.data[i] = rand() % 10;
 	L.length = i;
-	sort(L.data, L.data + L.length);
+	
 }
 
 void DeleteSame(SeqList &L)

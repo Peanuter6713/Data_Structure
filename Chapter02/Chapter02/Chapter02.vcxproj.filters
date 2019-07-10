@@ -21,6 +21,9 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="seqlist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Chapter02.rc">
@@ -28,7 +31,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex2_21.cpp">
+    <ClCompile Include="ex2_22.cpp">
       <Filter>源文件\section02</Filter>
     </ClCompile>
   </ItemGroup>
