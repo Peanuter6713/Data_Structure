@@ -5,6 +5,14 @@
 //#include "seqlist.h"  
 using namespace std;
 
+#define MaxLen 20
+#define ElemType int 
+
+typedef struct
+{
+	ElemType data[MaxLen];
+	int length;
+}SeqList;
 
 void CreateList(SeqList &L)
 {
