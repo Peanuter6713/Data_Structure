@@ -26,7 +26,7 @@
     <ResourceCompile Include="Chapter02.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_29.cpp" />
+    <ClCompile Include="ex3_32_1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
