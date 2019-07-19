@@ -71,6 +71,25 @@ void Display(LinkList L)
 	cout << endl;
 }
 
+
+void Sort(LinkList &L)
+{
+	Node *p = L->next, *pre, *r;
+	r = p->next;
+	p->next = NULL;			// 构造只含有一个数据节点的有序表
+	p = r;
+	while (p != NULL)
+	{
+		r = p->next;
+		pre = L;
+		while (pre->next != NULL && pre->next->data < p->data)
+			pre = pre->next;
+		p->next = pre->next;   //  在pre之后插入p   头插法
+		pre->next = p;
+		p = r;
+	}
+}
+
 int main()
 {
 	srand(time(NULL));
