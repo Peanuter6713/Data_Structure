@@ -26,8 +26,7 @@
     <ResourceCompile Include="Chapter02.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_34.cpp" />
-    <ClCompile Include="建立单链表必看.cpp" />
+    <ClCompile Include="ex3_37.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

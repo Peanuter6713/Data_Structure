@@ -28,10 +28,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_34.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="建立单链表必看.cpp">
+    <ClCompile Include="ex3_37.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
