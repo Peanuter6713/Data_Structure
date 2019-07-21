@@ -28,7 +28,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_37.cpp">
+    <ClCompile Include="ex3_39.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
