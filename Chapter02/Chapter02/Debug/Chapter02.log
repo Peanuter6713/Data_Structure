@@ -1,4 +1,4 @@
-﻿  ex3_41.cpp
-h:\coding\data_structure\chapter02\chapter02\ex3_41.cpp(107): warning C4326: “main”的返回类型应为“int”而非“void”
-h:\coding\data_structure\chapter02\chapter02\ex3_41.cpp(109): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+﻿  ex3_43.cpp
+h:\coding\data_structure\chapter02\chapter02\ex3_43.cpp(149): warning C4326: “main”的返回类型应为“int”而非“void”
+h:\coding\data_structure\chapter02\chapter02\ex3_43.cpp(151): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
   Chapter02.vcxproj -> H:\Coding\Data_Structure\Chapter02\Debug\Chapter02.exe
