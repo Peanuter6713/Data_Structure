@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CreateTree.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Tree.txt" />
