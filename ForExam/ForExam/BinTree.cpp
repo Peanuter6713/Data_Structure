@@ -1,5 +1,5 @@
 #include "BinTree.h"
-#define INF -1
+bool FLAG = true;
 
  
 
@@ -24,25 +24,28 @@ void Operation(BinTree T,int n,int h)
 
 int main()
 {
-	BinTree T1=NULL, T2=NULL;
+	BinTree T1=NULL, T2=NULL,T3=NULL;
 	int n=0, h=0;
 	int choice;
 	char str[] = { "ABC##D##EF##G##" };
 	ch = str;
 	CreateCharTree(T1);	
-	int array[] = { 1,2,3,-99,-99,-99,-99};
-	p = array;
-	CreateIntTree(T2);
-	 
-	while (1)
+	int array[] = { 1,2,3,-1,-1,5,-1,-1,6,7,-1,-1};
+	p = array;	
+	CreateIntTree(T2);	 
+	int array2[] = { 22,3,8,9,6,12,4,32,53 };
+	CreateBST(T3,array2,9);
+	while (FLAG)
 	{
-		cout << "1.charTree  2.intTree" << endl;
+		cout << "1.charTree  2.intTree 3.BinSortTree" << endl;
 		cout << "Input choice :" << endl;
 		cin >> choice;
 		switch (choice)
 		{
-		case 1:Operation(T1,n,h); break;
-		default:keyType = false; Operation(T2, n, h); break;
+		case 1:keyType=true;Operation(T1,n,h); break;
+		case 2:keyType = false; Operation(T2, n, h); break;
+		case 3:keyType = false; Operation(T3, n, h); break;
+		default:FLAG = false; break;
 		}
 		cout << endl;
 	}

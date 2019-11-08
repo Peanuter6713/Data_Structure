@@ -7,8 +7,10 @@ using namespace std;
 
 #define ElemType char
 
-char *ch;
+char *ch; 
 int *p;
+
+ 
 bool keyType = true; // 此情况下为 charTree
 
 typedef struct BinNode
@@ -21,6 +23,8 @@ typedef struct BinNode
 
 void CreateCharTree(BinTree &T);
 void CreateIntTree(BinTree &T);
+void CreateBST(BinTree &T, int array[], int n);
+int  InsertBST(BinTree &T, int k);
 void PreOrder(BinTree T);
 void InOrder(BinTree T);
 void PostOrder(BinTree T);
@@ -48,10 +52,39 @@ void CreateIntTree(BinTree &T)
 	else
 	{
 		T = new BinNode;
-		T->key = *(p - 1);
+		T->key = *(p-1);
 		CreateIntTree(T->lchild);
 		CreateIntTree(T->rchild);
 	}
+}
+
+int InsertBST(BinTree &T,int k)
+{
+	if (T == NULL)
+	{
+		T = (BinNode *)malloc(sizeof(BinNode));
+		T->key = k;
+		T->lchild = T->rchild = NULL;
+		return 1;
+	}
+	else if (k == T->key)
+		return 0;
+	else if (k < T->key)
+		return InsertBST(T->lchild, k);
+	else
+		return InsertBST(T->rchild, k);
+}
+
+void CreateBST(BinTree &T, int array[], int n)
+{
+	T = NULL;
+	int i = 0;
+	while (i < n)
+	{
+		InsertBST(T, array[i]);
+		i++;
+	}
+	 
 }
 
 void PreOrder(BinTree T)
@@ -129,6 +162,7 @@ void InvertTree(BinTree &T)
 		InvertTree(T->rchild);
 	}
 }
+
 
   
 #endif // !HEAD_H
