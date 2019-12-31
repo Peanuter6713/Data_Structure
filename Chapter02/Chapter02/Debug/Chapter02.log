@@ -1,4 +1,0 @@
-﻿  ex5_14.cpp
-f:\github\data_structure\chapter02\chapter02\ex5_14.cpp(67): warning C4326: “main”的返回类型应为“int”而非“void”
-f:\github\data_structure\chapter02\chapter02\ex5_14.cpp(69): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  Chapter02.vcxproj -> F:\GitHub\Data_Structure\Chapter02\Debug\Chapter02.exe
